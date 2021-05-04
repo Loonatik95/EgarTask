@@ -8,11 +8,11 @@ public class WishListPage extends AbstractPage {
     private By priceProduct = By.xpath("//form[@id='fuckingBasket'][@class]//div[not(contains(@class,'hidden'))]/div[@class='cart-item-price']");
 
 
-    public String getNameProduct(int index){
+    public String getNameProduct(int index) {
         return browseActions.getText(nameProduct, index);
     }
 
-    public String getPriceProduct(int index){
+    public String getPriceProduct(int index) {
         return browseActions.getText(priceProduct, index);
     }
 }
